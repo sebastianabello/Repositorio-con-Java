@@ -73,6 +73,6 @@ public class ClienteListRepositorio implements CrudRespositorio,
 
     @Override
     public List<Cliente> listar(int desde, int hasta) {
-        return null;
+        return dataSource.subList(desde,hasta);
     }
 }
